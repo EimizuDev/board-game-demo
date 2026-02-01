@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css?v=13">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board game demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+  </head>
+  <body>
+    <div class="board">
+      <img src="img/board.png?v=2" alt="Board game">
+      <div aria-label="Yellow card deck" class="deck yellow"></div>
+      <div aria-label="Blue card deck" class="deck blue"></div>
+      <div aria-label="Red card deck" class="deck red"></div>
+      <div aria-label="Green card deck" class="deck green"></div>
+      <div aria-label="Orange card deck" class="deck orange"></div>
+      <div aria-hidden="true" class="card" style="visibility: hidden;"></div>
+      <button type="button" class="wheel-button" aria-label="Spin the wheel" onclick="spinWheel()">
+        <canvas id="wheel" style="position: relative; height:25vmin; width:25vmin;"></canvas>
+        <span aria-hidden="true" class="center-of-wheel"></span>
+        <img aria-hidden="true" src="img/wheel_arrow.png?v=1" id="arrow" style="transform: translate(-51%, -51.4%) rotate(60deg);">
+      </button>
+      <img src="img/figure_1.png" id="figure-1" class="figure">
+      <img src="img/figure_2.png" id="figure-2" class="figure">
+      <img src="img/figure_3.png" id="figure-3" class="figure">
+    </div>
+    <div class="question-card" style="visibility: hidden;">
+      <div class="question-text-cont">
+        <div class="question-text-positioning">
+          <h4 id="question"></h4>
+          <div>
+            <button type="button" id="a" disabled onclick="selectA()"></button>
+            <button type="button" id="b" disabled onclick="selectB()"></button>
+            <button type="button" id="c" disabled onclick="selectC()"></button>
+            <button type="button" id="d" disabled onclick="selectD()"></button>
+            <button class="confirm" type="button" onclick="answerCheck()">Confirm</button>
+          </div>
+          <span id="level"></span>
+        </div>
+      </div>
+    </div>
+    <div class="demo">
+      <div class="demo-cont">
+        <span>Thank you for playing!</span>
+      </div>
+    </div>
+    <div class="main-menu">
+      <div class="main-menu-cont">
+        <div class="buttons">
+          <button type="button" onclick="play()" id="play">Play demo</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js?v=17"></script>
+  </body>
+</html>
