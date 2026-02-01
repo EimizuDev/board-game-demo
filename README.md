@@ -62,5 +62,5 @@ These limitations are intentional to respect third-party ownership of the origin
 This repository contains **only code and assets made by me**.  
 All original brand assets, board visuals, icons, and quiz content have been removed and remain the property of their respective owners.
 
-#### This repository is intended for **portfolio review and educational purposes only**.  
+This repository is intended for **portfolio review and educational purposes only**.  
 #### See the `LICENSE.txt` file for details.
