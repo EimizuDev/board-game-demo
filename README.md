@@ -8,7 +8,7 @@
 
 ## Overview
 
-This repository contains a **web board game demo** developed in 2025 as part of a school-related project.  
+This repository contains a **web board game demo** developed in 2025.  
 The original visual assets and question content have been removed or replaced, so the game does not fully represent its original presentation. The purpose of this repository is to **showcase the game logic and frontend structure**, not to provide a complete playable product.
 
 ## Game Summary
